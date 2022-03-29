@@ -304,7 +304,4 @@ li{display: list-item;
 }
 .mySlides .btn{
     animation: captiontxt 1s ease forwards;
-}
-.col-lg-5{
-    animation: img 1s ease;
-}
+
