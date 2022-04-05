@@ -3,3 +3,222 @@
     background-color: #f5f5f5;
    
 }
+
+.app-content {
+    min-height: calc(100vh - 50px);
+    padding: 10px;
+    background-color: #f5f5f5;
+    -webkit-transition: margin-left 0.3s ease;
+    -o-transition: margin-left 0.3s ease;
+    transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .app-content {
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .app-content {
+        margin-top: 10px;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-content {
+        padding: 15px;
+    }
+}
+
+@media print {
+    .app-content {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+}
+
+.light-text {
+    font-weight: 300 !important;
+}
+
+.semibold-text {
+    font-weight: 600 !important;
+}
+
+.line-head {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*----- Componant: Top Navigation Bar ----- */
+
+.app-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgb(0, 28, 64);
+    z-index: 1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.app-header__logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    color: #FFD43B !important;
+    text-align: center;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    display: none !important;
+}
+
+.app-header__logo:focus,
+.app-header__logo:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.app-sidebar__toggle {
+    padding: 10px;
+    font-family: fontAwesome;
+    color: white;
+    line-height: 2.4;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    /* background-color: white; */
+    /* width: 30px; */
+    height: 30px;
+    line-height: 15px;
+    margin-top: 7px;
+    border-radius: .357rem;
+}
+
+.app-sidebar__toggle:before {
+    content: "\f009";
+    font-size: 15px;
+}
+
+.bx {
+    /* margin: 0; */
+    /* font-family: inherit; */
+    /* font-size: inherit; */
+    /* line-height: inherit; */
+    font-size: 20px;
+}
+
+.app-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+@media (min-width: 768px) {
+    .app-nav {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+
+.app-nav__item {
+    display: block;
+    padding: 15px;
+    line-height: 0px;
+    color: rgb(0, 28, 64);
+    background: rgb(255, 212, 59);
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.app-nav__item:hover,
+.app-nav__item:focus {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+
+.app-search {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-right: 15px;
+    padding: 10px 0;
+}
+
+@media (max-width: 480px) {
+    .app-search {
+        display: none;
+    }
+}
+
+.app-search__input {
+    border: 0;
+    padding: 5px 10px;
+    padding-right: 30px;
+    border-radius: .357rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.app-search__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.app-search__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.app-search__input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.app-search__input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.app-search__button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    padding: 0 10px;
+    border: 0;
+    color: rgba(0, 0, 0, 0.8);
+    background: none;
+    cursor: pointer;
+}
+
+.app-notification {
+    min-width: 270px;
+}
+
+.app-notification__title {
+    padding: 8px 20px;
+    text-align: center;
+    background-color: rgba(0, 150, 136, 0.4);
+    color: #333;
+}
