@@ -577,8 +577,13 @@
 
 @media (max-width: 480px) {
     .app-title {
+<<<<<<< Updated upstream
         /* margin: -15px -15px 15px; */
         /* padding: 20px; */
+=======
+        margin: -15px -15px 15px; */
+        /* padding: 20px;
+>>>>>>> Stashed changes
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
