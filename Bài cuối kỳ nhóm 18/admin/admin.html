@@ -68,8 +68,30 @@
             /* border: 3px solid red; */
             border-radius: 50%;
         }
-
+        
+        .removeimg::before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            content: '';
+            border: 1px solid red;
+            background: red;
+            text-align: center;
+            display: block;
+            margin-top: 11px;
+            transform: rotate(45deg);
         }
+        
+        
+        .removeimg::after {
+            /* color: #FFF; */
+            /* background-color: #DC403B; */
+            content: '';
+            background: red;
+            border: 1px solid red;
+            text-align: center;
+            display: block;
+            transform: rotate(-45deg);
+            margin-top: -2px;
     </style>
     <!-- Navbar-->
     <header class="app-header">
@@ -101,6 +123,19 @@
             <li><a style="text-decoration: none;" class="app-menu__item active" href=""><i
                         class="bi bi-person-circle"></i>
                     <span class="app-menu__label">Quan lý người dùng</span></a></li>
+            <li><a style="text-decoration: none;" class="app-menu__item " href=""><i
+                        class="bi bi-file-earmark-post"></i><span class="app-menu__label">Quản lý bài viết</span></a>
+            </li>
+            <li><a style="text-decoration: none;" class="app-menu__item " href=""><i
+                        class="bi bi-chat-left-dots"></i><span class="app-menu__label">Quản lý nhân viên </span></a>
+            </li>
+            <li><a style="text-decoration: none;" class="app-menu__item" href=""><i class="bi bi-image"></i><span
+                        class="app-menu__label">Quản lý sản phẩm</span></a></li>
+
+
+            <li><a style="text-decoration:none;" class="app-menu__item" href="#"><i class="bi bi-gear"></i><span
+                        class="app-menu__label">Cài
+                        đặt hệ thống</span></a></li>
         </ul>
     </aside>
     <main class="app-content">
@@ -108,7 +143,8 @@
             <h1> Danh sách người dùng </h1>
         </div>
         <div class="container">
-            <h3 style=" margin-left:400px ; margin-top:30px">Quản lý người dùng </h3>
+            <h3 style=" margin-left:400px ; margin-top:30px"
+            >Quản lý người dùng </h3>
             <button type="button" class="btn btn-primary"><a href=""
                     style="display: block; color: white;text-decoration:none">Thêm</a></button>
 
@@ -118,7 +154,7 @@
                         <th scope="col">Mã người dùng</th>
                         <th scope="col">Họ và tên </th>
                         <th scope="col">Email</th>
-                        <th scope="col">Giới tính</th>
+                        <th scope="col">Gioi tính</th>
                         <th scope="col">Ngày sinh</th>
                         <th scope="col">Ngày đăng nhập</th>
                         <th scope="col">Sửa</th>
@@ -132,7 +168,49 @@
                         <th scope="row">cvcvc</th>
                         <td>Ten</td>
                         <td>Email</td>
-                        <td>Giới tinh</td>
+                        <td>Gioi tinh</td>
+                        <td>Date</td>
+                        <td>Date</td>
+                        <td><a href=""><span class="material-icons-outlined">edit</span></a>
+                        </td>
+                        <td><a href=""><span class="material-icons-outlined">delete</span></a>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">cvcvc</th>
+                        <td>Tạ Tiến Đạt</td>
+                        <td>tadat24112002@gmail.com</td>
+                        <td>Nam</td>
+                        <td>Date</td>
+                        <td>Date</td>
+                        <td><a href=""><span class="material-icons-outlined">edit</span></a>
+                        </td>
+                        <td><a href=""><span class="material-icons-outlined">delete</span></a>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">cvcvc</th>
+                        <td>Phạm Hồng Đăng</td>
+                        <td>Email</td>
+                        <td>Gioi tinh</td>
+                        <td>Date</td>
+                        <td>Date</td>
+                        <td><a href=""><span class="material-icons-outlined">edit</span></a>
+                        </td>
+                        <td><a href=""><span class="material-icons-outlined">delete</span></a>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">cvcvc</th>
+                        <td>Đỗ Việt Anh</td>
+                        <td>Email</td>
+                        <td>Gioi tinh</td>
                         <td>Date</td>
                         <td>Date</td>
                         <td><a href=""><span class="material-icons-outlined">edit</span></a>
@@ -157,6 +235,9 @@ MODAL
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/plugins/pace.min.js"></script>
+
+
+   
 
 </body>
 

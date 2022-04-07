@@ -1,0 +1,15 @@
+span {
+    cursor: pointer;
+}
+
+.page-shop-content {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eae8e4!important;
+    margin-bottom: 3.5rem;
+}
+
+.page-content-left {
+    width: 330px;
+    margin-right: 4rem;
+}
+
