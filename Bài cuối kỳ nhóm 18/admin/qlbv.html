@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> Quản trị Admin| Quan ly nguoi dung</title>
+    <title> Quản trị Admin| Quản lý bài viết</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,7 +81,6 @@
             transform: rotate(45deg);
         }
         
-        
         .removeimg::after {
             /* color: #FFF; */
             /* background-color: #DC403B; */
@@ -92,6 +91,7 @@
             display: block;
             transform: rotate(-45deg);
             margin-top: -2px;
+        }
     </style>
     <!-- Navbar-->
     <header class="app-header">
@@ -119,11 +119,11 @@
         <hr>
         <ul class="app-menu">
 
-
-            <li><a style="text-decoration: none;" class="app-menu__item active" href="./admin.html"><i
+            
+            <li><a style="text-decoration: none;" class="app-menu__item " href="./admin.html"><i
                         class="bi bi-person-circle"></i>
                     <span class="app-menu__label">Quan lý người dùng</span></a></li>
-            <li><a style="text-decoration: none;" class="app-menu__item " href="./qlbv.html"><i
+            <li><a style="text-decoration: none;" class="app-menu__item active"  href="./qlbv.html"><i
                         class="bi bi-file-earmark-post"></i><span class="app-menu__label">Quản lý bài viết</span></a>
             </li>
             <li><a style="text-decoration: none;" class="app-menu__item " href="./qlnv.html"><i
@@ -140,23 +140,19 @@
     </aside>
     <main class="app-content">
         <div class="app-title">
-            <h1> Danh sách người dùng </h1>
+            <h1> Danh sách bài viết </h1>
         </div>
         <div class="container">
-            <h3 style=" margin-left:400px ; margin-top:30px"
-            >Quản lý người dùng </h3>
+            <h3 style=" margin-left:400px ; margin-top:30px">Quản lý bài viết </h3>
             <button type="button" class="btn btn-primary"><a href=""
                     style="display: block; color: white;text-decoration:none">Thêm</a></button>
 
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Mã người dùng</th>
-                        <th scope="col">Họ và tên </th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Gioi tính</th>
-                        <th scope="col">Ngày sinh</th>
-                        <th scope="col">Ngày đăng nhập</th>
+                        <th scope="col">Tiêu đề</th>
+                        <th scope="col">Trạng thái </th>
+                        
                         <th scope="col">Sửa</th>
                         <th scope="col">Xóa</th>
                     </tr>
@@ -165,12 +161,10 @@
 
 
                     <tr>
-                        <th scope="row">cvcvc</th>
-                        <td>Ten</td>
-                        <td>Email</td>
-                        <td>Gioi tinh</td>
-                        <td>Date</td>
-                        <td>Date</td>
+                        <th scope="row">Mục1</th>
+                        <td>Đang mở</td>
+                        
+                        
                         <td><a href=""><span class="material-icons-outlined">edit</span></a>
                         </td>
                         <td><a href=""><span class="material-icons-outlined">delete</span></a>
@@ -179,12 +173,10 @@
 
                     </tr>
                     <tr>
-                        <th scope="row">cvcvc</th>
-                        <td>Tạ Tiến Đạt</td>
-                        <td>tadat24112002@gmail.com</td>
-                        <td>Nam</td>
-                        <td>Date</td>
-                        <td>Date</td>
+                        <th scope="row">Mục2</th>
+                        <td>Đang mở</td>
+                        
+                        
                         <td><a href=""><span class="material-icons-outlined">edit</span></a>
                         </td>
                         <td><a href=""><span class="material-icons-outlined">delete</span></a>
@@ -193,12 +185,10 @@
 
                     </tr>
                     <tr>
-                        <th scope="row">cvcvc</th>
-                        <td>Phạm Hồng Đăng</td>
-                        <td>Email</td>
-                        <td>Gioi tinh</td>
-                        <td>Date</td>
-                        <td>Date</td>
+                        <th scope="row">Mục3</th>
+                        <td>Đang đóng</td>
+                        
+                        
                         <td><a href=""><span class="material-icons-outlined">edit</span></a>
                         </td>
                         <td><a href=""><span class="material-icons-outlined">delete</span></a>
@@ -207,12 +197,10 @@
 
                     </tr>
                     <tr>
-                        <th scope="row">cvcvc</th>
-                        <td>Đỗ Việt Anh</td>
-                        <td>Email</td>
-                        <td>Gioi tinh</td>
-                        <td>Date</td>
-                        <td>Date</td>
+                        <th scope="row">Mục4</th>
+                        <td>Đang mở</td>
+                        
+                        
                         <td><a href=""><span class="material-icons-outlined">edit</span></a>
                         </td>
                         <td><a href=""><span class="material-icons-outlined">delete</span></a>
@@ -220,6 +208,19 @@
 
 
                     </tr>
+                    <tr>
+                        <th scope="row">Mục5</th>
+                        <td>Đang đóng</td>
+                        
+                        
+                        <td><a href=""><span class="material-icons-outlined">edit</span></a>
+                        </td>
+                        <td><a href=""><span class="material-icons-outlined">delete</span></a>
+                        </td>
+
+
+                    </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -235,9 +236,6 @@ MODAL
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/plugins/pace.min.js"></script>
-
-
-   
 
 </body>
 
