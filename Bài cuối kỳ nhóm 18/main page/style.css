@@ -625,3 +625,193 @@ ul.products li {
 .item-book:hover {
     color: var(--text-color);
 }
+/*new sale*/
+
+.content-left {
+    height: 800px;
+    background-color: #fff6f6;
+}
+
+.banner {
+    padding: 6rem 3rem;
+}
+
+.banner-txt {
+    padding-top: 3rem;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.banner-txt-content {
+    color: var(--hover-text);
+    font-size: 40px;
+}
+
+.banner-txt-price {
+    color: #beb4b4;
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.view-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f75454;
+    border-color: #f75454;
+    padding: 1rem;
+}
+
+.view-more:hover {
+    background-color: #f01000;
+    color: #fff;
+}
+
+ul.products .products-item {
+    flex-basis: 33.2%;
+}
+
+.product-item-sp {
+    position: relative;
+    padding: 1.875rem;
+    background: white;
+    border: 1px solid #eae8e4;
+    overflow: hidden;
+    height: 400px;
+}
+
+.product-item-sp:hover .product-info {
+    height: 200px;
+    left: 1.875rem;
+    right: 1.875rem;
+    bottom: 0;
+}
+
+.product-item-sp:hover {
+    border: 1px solid var(--text-color);
+}
+
+
+/*Deals of the Week*/
+
+.Biographies_Books {
+    background-color: white;
+    padding: 1.6rem;
+    border: 1px solid #eae8e4;
+}
+
+.item-left img {
+    height: 100%;
+}
+
+.item-right,
+.Biographies-Books-right {
+    margin-left: 2rem;
+}
+
+.item-txt {
+    font-size: 19px;
+    padding: 0.75rem 0rem;
+}
+
+.border-left {
+    border-left: 1px solid #eae8e4!important;
+}
+
+.head-txt {
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.tail {
+    padding-bottom: 1rem;
+}
+
+.deal-progress {
+    padding-top: 1rem;
+}
+
+.jk {
+    margin-top: 2rem;
+}
+
+.Biographies-Books-left img {
+    height: 100%;
+}
+
+
+/*author */
+
+.author-item {
+    padding: 2.5rem;
+    border: 0;
+}
+
+.author-body {
+    padding-top: 1.9rem;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+/*footer*/
+
+.footer-information {
+    padding-bottom: 5.5rem;
+    border-bottom: 1px solid #eae8e4;
+}
+
+.input-group-primary {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 50%;
+}
+
+.form-control {
+    margin-right: 1rem;
+}
+
+.footer-Newsletter {
+    padding-bottom: 8rem;
+}
+
+.step {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 3.5rem;
+}
+
+.text {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 70;
+    font-size: 14px;
+}
+
+.text:hover {
+    color: var(--text-color);
+}
+
+.footer-bottom {
+    padding-top: 3rem;
+}
+
+.img {
+    padding-right: 20px;
+}
+
+.no-buffle .filter-opt {
+    font-size: 14px;
+    font-weight: 100;
+    border: 1px solid #eae8e4!important;
+    margin-right: 20px;
+}
